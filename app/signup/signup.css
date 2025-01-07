@@ -1,0 +1,131 @@
+.SignUp_Main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensures the content appears above the video */
+    color: white;
+    text-align: center;
+    /* padding-top: 2vh;  */
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* .content_item1{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.content_item2{
+    height: 100vh;
+    background-color: rgba(0, 9, 12, 0.174);
+}
+.signup-form{
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.group1{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.group1 label{
+    font-size: 0.8em;
+}
+.group1 input{
+    border: 1px solid rgb(255, 255, 255);
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.211);
+    color: white;
+}
+.group_email{  
+    width: 350px;
+}
+.group_email input{
+    width: 100%;
+}
+
+
+.form_group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25;
+    padding: 2px;
+
+    width: 45%;
+    height: 9%;
+}
+
+/* .form_header{
+}
+.form_group1{
+  
+}
+.form_group2{
+}
+.form_group3{
+}
+.form_group4{
+}
+.form_group5{
+}
+.form_group6{
+}
+.form_group7{
+}
+.form_other_header{
+} */
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60%; /* Adjust based on your layout needs */
+    height: 85%; /* Adjust based on your layout needs */
+    border-radius: 15px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Applies the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Soft shadow for a lifted look */
+    z-index: 0; /* Ensures it stays behind form content */
+}
+
+/* Ensure the form sits above the cover */
+.signup-form {
+    position: relative;
+    z-index: 1;
+}
+

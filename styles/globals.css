@@ -1,0 +1,432 @@
+.default-body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: auto; /* Allow content to dictate height */
+  overflow-y: scroll; /* Enable scrolling for long pages */
+}
+
+/* Dashboard-specific body styling */
+.dashboard-body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Restrict height to viewport */
+  overflow: hidden; /* Disable scrolling */
+  background-color: #f0f0f0; /* Example background */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/background3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app-header{
+  /* background-color: #931111; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.app-header .org_name{
+  color: white;
+  background-color: #33aa28; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  gap: 15;
+  border-radius: 10px;
+  padding: 0.1em;
+}
+
+.app-header .links{
+  /* background-color: #4CAF50; */
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25;
+
+}
+.app-header .links a {
+  font-size: 1.2em;
+  color: #133e0f;
+  text-decoration: none; /* No underline by default */
+  position: relative; /* Needed for positioning the pseudo-element */
+  display: inline-block; /* Allows pseudo-elements to align properly */
+  /* padding-bottom: 5px;  */
+  /* background-color: #26801D; */
+}
+
+.app-header .links a::after {
+  content: ""; /* Creates a decorative pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* Initially hidden */
+  height: 2px; /* Thickness of the underline */
+  background-color: white; /* Matches the link color */
+  transition: width 0.3s ease; /* Smooth transition for the animation */
+}
+
+.app-header .links a:hover::after {
+  width: 100%; /* Expands the underline to full width on hover */
+}
+
+
+.button {
+  padding: 1.2em;
+  background-color: rgba(129, 255, 129, 0);
+  border: 2px solid white;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+
+  transition: all ease .1s;
+}
+
+.button:hover {
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0);
+  background-color: #26801D;
+}
+
+
+.pawpal_info{
+  background-color: #071a06c7;
+  padding: 40px 80px 40px 40px;
+  height: 290px;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10;
+}
+
+.pawpal_info .info_name{
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.pawpal_info .info_info{
+  color: white;
+  font-size: 1.5em;
+}
+
+.pawpal_info .info_link{
+  background-color: #38bc2c;
+  padding: 1.4em;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 130px;
+
+  transition: all ease .1s;
+}
+.pawpal_info .info_link:hover{
+  background-color: #33aa28;
+}
+
+/* SECTION_1_COMMUNITY START */
+.section_1_container{
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.sec1_item1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: red; */
+  height: 60%;
+  margin-right: -20px;
+}
+
+.sec1_item1 > div:nth-child(1) {
+  color: #32AA27;
+  font-weight: bold;
+}
+
+.sec1_item1 > div:nth-child(2) {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.sec1_item1 > p:nth-child(3) {
+  line-height: 30px;
+  color: #595959;
+  font-size: large;
+}
+
+.sec1_item1 > a:nth-child(4) {
+  color: #595959;
+
+  transition: all ease .2s;
+}
+.sec1_item1 > a:nth-child(4):hover {
+  text-decoration: none;
+}
+
+
+.sec2_item2{
+  width: 510px;
+  height: 510px;
+  margin-left: -20px;
+}
+/* SECTION_1_COMMUNITY END */
+
+
+
+/* PAWPAL FEATURE SECTION START */
+.pawpal_features_section {
+  background-color: #f6f9f8;
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pawpal_features_item1 {
+  text-align: left;
+  width: 67%;
+  margin-bottom: 3rem;
+  /* background-color: rebeccapurple; */
+}
+
+.features_heading {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #35b328;
+  text-transform: uppercase;
+}
+
+.features_subheading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 0.5rem;
+}
+
+.pawpal_features_item2 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.feature_card {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.feature_card:hover h3 {
+  color: #31A827; /* Change h3 color on hover */
+}
+
+.feature_image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature_content {
+  padding: 1.5rem;
+}
+
+.feature_content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #000;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.feature_content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pawpal_features_item2 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pawpal_features_item1 {
+    text-align: center;
+  }
+}
+/* PAWPAL FEATURE SECTION END */
+
+
+
+
+/* GET IN TOUCH START */
+.get_in_touch_section {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* gap: 2rem; */
+}
+
+.get_in_touch_left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.get_in_touch_left h3 {
+  color: #31A827;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.get_in_touch_left h2 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.get_in_touch_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.get_in_touch_form label {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+
+.get_in_touch_form input,
+.get_in_touch_form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1.5px double #000000;
+  border-radius: 1px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.get_in_touch_form textarea {
+  height: 100px;
+}
+
+.get_in_touch_form input:focus,
+.get_in_touch_form textarea:focus {
+  outline: none; /* Removes default focus outline */
+  border: 1.5px double #31A827; /* Adds a double green border */
+}
+
+.get_in_touch_checkbox {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 1em;
+  /* background-color: rebeccapurple; */
+}
+.get_in_touch_checkbox input{
+  width: 5%;
+}
+.get_in_touch_checkbox label{
+  font-weight: normal;
+}
+
+
+.get_in_touch_submit {
+  padding: 0.8rem;
+  background-color: #31A827;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get_in_touch_submit:hover {
+  background-color: #24991F;
+}
+
+.get_in_touch_right {
+  flex: 1;
+  max-width: 400px;
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.get_in_touch_right h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.get_in_touch_right p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.get_in_touch_right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.get_in_touch_right ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .get_in_touch_section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .get_in_touch_left,
+  .get_in_touch_right {
+    max-width: 100%;
+  }
+}
+/* GET IN TOUCH END */

@@ -1,0 +1,34 @@
+1.From the dashboard, change "Other Features" to "Notification". This is where user(client) can check what is going on in terms of the services they booked for and others
+2.Moving wallpapers in the landing page
+3.Theme color: brown
+4.Check for the validity of the user's signup
+
+
+
+Sign-up Page for Clients (Dog Owners)
+Personal Information:
+
+First Name (Required)
+Last Name (Required)
+username
+Email Address (Required, must be unique)
+Phone Number (Required, must be valid)
+Password (Required, must meet system security criteria)
+Confirm Password (Required, must match Password)
+
+
+Address Details:
+Street Address (Optional)
+City (Required)
+State/Region (Optional)
+
+
+Dog Details (Optional at signup but can be filled in later):
+Dog Name
+Dog Breed
+Age of Dog
+Gender of Dog (e.g., Male/Female)
+Vaccination Status (Dropdown: Up-to-date, Partially up-to-date, Not vaccinated)
+Dog image
+
+A Checkbox to agree to terms and conditions.
